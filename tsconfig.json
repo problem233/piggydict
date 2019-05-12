@@ -2,14 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "es5", "es2015.iterable"],
     "outDir": "dist",
     "strict": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": { "*": ["types/*"] },
     "plugins": [
       {
         "name": "typescript-tslint-plugin",

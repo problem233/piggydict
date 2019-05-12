@@ -1,6 +1,7 @@
 import { hot } from 'react-hot-loader/root'
 
-import React from 'react'
+import { css } from '@emotion/core'
+
 
 const App = () => <>
   <h1>Hi</h1>
