@@ -81,6 +81,17 @@ module.exports = {
           },
           'css-loader'
         ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: whenDev ? 'font/[name].[ext]' : 'font/[name].[hash].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
