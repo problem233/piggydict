@@ -25,7 +25,7 @@ export default () => <div css={{ height: '100vh' }}>
     transform: 'translate(-50%, -50%)',
     width: '1.15em',
     fontSize: 16
-  }}><FontIcon>settings</FontIcon></Button>
+  }}><FontIcon settings /></Button>
   <div css={{
     position: 'absolute',
     bottom: 2,

@@ -1,10 +1,10 @@
 import { css } from '@emotion/core'
 
 interface Props {
-  children: string
+  [key: string]: boolean
 }
 
-export default ({ children: name }: Props) =>
-  <span className={`icon-${name}`} css={{
+export default (props: Props) =>
+  <span className={`icon-${Object.keys(props)[0]}`} css={{
     ':before': { margin: 'auto' }
   }} />
